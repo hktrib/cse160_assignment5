@@ -19,7 +19,7 @@ const controls: OrbitControls = new OrbitControls(camera, renderer.domElement);
 
 // Textures
 const textureLoader: THREE.TextureLoader = new THREE.TextureLoader();
-const texture: THREE.Texture = textureLoader.load('/public/images/gradienttexture.jpg');
+const texture: THREE.Texture = textureLoader.load('/images/gradienttexture.jpg');
 
 // Materials
 const materialBasic: THREE.MeshBasicMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
@@ -34,7 +34,7 @@ const loader = new STLLoader();
 
 let seraphis: THREE.Mesh;
 
-loader.load('/public/models/serapis.stl', function (geometry) {
+loader.load('/models/serapis.stl', function (geometry) {
     const material = new THREE.MeshLambertMaterial({ color: 0xffffff });
 
     const mesh = new THREE.Mesh(geometry, material);
@@ -93,7 +93,7 @@ scene.add(pointLight);
 // Textured skybox
 const skyGeometry: THREE.BoxGeometry = new THREE.BoxGeometry(100, 100, 100);
 const skyMaterial: THREE.MeshBasicMaterial = new THREE.MeshBasicMaterial({
-    map: textureLoader.load('/public/images/environment.jpg'),
+    map: textureLoader.load('/images/environment.jpg'),
     side: THREE.BackSide
 });
 const skybox: THREE.Mesh = new THREE.Mesh(skyGeometry, skyMaterial);
