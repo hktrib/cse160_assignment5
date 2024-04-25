@@ -47,7 +47,7 @@ loader.load('/models/serapis.stl', function (geometry) {
 
 
 // Cubes
-for (let i: number = 0; i < 8; i++) {
+for (let i: number = 0; i < 10; i++) {
     const geometry: THREE.BoxGeometry = new THREE.BoxGeometry(1, 1, 1);
     const cube: THREE.Mesh = new THREE.Mesh(geometry, materialTextured);
     cube.position.set(Math.random() * 10 - 5, Math.random() * 10, Math.random() * 10 - 5);
@@ -56,7 +56,7 @@ for (let i: number = 0; i < 8; i++) {
 }
 
 // Spheres
-for (let i: number = 0; i < 6; i++) {
+for (let i: number = 0; i < 15; i++) {
     const geometry: THREE.SphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
     const sphere: THREE.Mesh = new THREE.Mesh(geometry, materialPhong);
     sphere.position.set(Math.random() * 20 - 5, Math.random() * 20, Math.random() * 20 - 5);
