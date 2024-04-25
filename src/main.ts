@@ -59,7 +59,7 @@ for (let i: number = 0; i < 8; i++) {
 for (let i: number = 0; i < 6; i++) {
     const geometry: THREE.SphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
     const sphere: THREE.Mesh = new THREE.Mesh(geometry, materialPhong);
-    sphere.position.set(Math.random() * 10 - 5, Math.random() * 10, Math.random() * 10 - 5);
+    sphere.position.set(Math.random() * 50 - 5, Math.random() * 50, Math.random() * 50 - 5);
     scene.add(sphere);
     shapes.push(sphere);
 }
@@ -68,7 +68,7 @@ for (let i: number = 0; i < 6; i++) {
 for (let i: number = 0; i < 6; i++) {
     const geometry: THREE.CylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
     const cylinder: THREE.Mesh = new THREE.Mesh(geometry, materialBasic);
-    cylinder.position.set(Math.random() * 10 - 5, Math.random() * 10, Math.random() * 10 - 5);
+    cylinder.position.set(Math.random() * 100 - 5, Math.random() * 100, Math.random() * 100 - 5);
     scene.add(cylinder);
     shapes.push(cylinder);
 }
@@ -104,13 +104,8 @@ function animate(): void {
     requestAnimationFrame(animate);
     
     // Animate the cube
-    // cubeAnimated.rotation.x += 0.01;
-    // cubeAnimated.rotation.y += 0.01;
 
-
-    // seraphis.rotation.y += 0.01;
     seraphis.rotation.z += 0.01;
-    // seraphis.rotation.x += 0.01;
 
     // Render the scene
     renderer.render(scene, camera);
