@@ -68,7 +68,7 @@ for (let i: number = 0; i < 6; i++) {
 for (let i: number = 0; i < 6; i++) {
     const geometry: THREE.CylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
     const cylinder: THREE.Mesh = new THREE.Mesh(geometry, materialBasic);
-    cylinder.position.set(Math.random() * 100 - 5, Math.random() * 100, Math.random() * 100 - 5);
+    cylinder.position.set(Math.random() * 30 - 5, Math.random() * 30, Math.random() * 30 - 5);
     scene.add(cylinder);
     shapes.push(cylinder);
 }
