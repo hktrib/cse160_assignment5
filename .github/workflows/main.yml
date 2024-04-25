@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: assignment5 deployment
 on:
   push:
     branches: ["main"]
