@@ -59,7 +59,7 @@ for (let i: number = 0; i < 8; i++) {
 for (let i: number = 0; i < 6; i++) {
     const geometry: THREE.SphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
     const sphere: THREE.Mesh = new THREE.Mesh(geometry, materialPhong);
-    sphere.position.set(Math.random() * 50 - 5, Math.random() * 50, Math.random() * 50 - 5);
+    sphere.position.set(Math.random() * 20 - 5, Math.random() * 20, Math.random() * 20 - 5);
     scene.add(sphere);
     shapes.push(sphere);
 }
@@ -68,7 +68,7 @@ for (let i: number = 0; i < 6; i++) {
 for (let i: number = 0; i < 6; i++) {
     const geometry: THREE.CylinderGeometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 32);
     const cylinder: THREE.Mesh = new THREE.Mesh(geometry, materialBasic);
-    cylinder.position.set(Math.random() * 30 - 5, Math.random() * 30, Math.random() * 30 - 5);
+    cylinder.position.set(Math.random() * 15- 5, Math.random() * 15, Math.random() * 15 - 5);
     scene.add(cylinder);
     shapes.push(cylinder);
 }
